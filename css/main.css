@@ -1,98 +1,91 @@
-html {
-	/* scroll-behavior: smooth; */
-  }
 
 body {
 background-color:#F2F1F2;
 font-family: 'Oswald', 'Arial', sans-serif;
-/* max-height: 1000px; */
+min-height: 100%;
+
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+
 }
 
-header {
-	padding: 0 30px;
-	box-shadow: 0px 0px 3px gray;
-	background-color:#FFFFFE;
+/* все что внутри этого div выравнивается по центру (а внутри все :)) */
+
+.wrapper {
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
 	margin: 0 auto;
-	min-width: 320px;
-	height: 44px;
+	min-width: 200px;
+ width: 100%;
+	/* height: auto; */
+
+}
+
+
+/* все что внутри этого div выравнивается по центру */
+
+header {
 	position:sticky;
 	top:0;
 	z-index: 1;
+	height: 72px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* margin: 0 auto; */
+	/* overflow: hidden; */
+}
+
+
+/* десигн панели навигации */
+
+nav ul {
+	display: flex;
 	}
 
-ul menu {
-	margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
+ul li {
+	padding: 10px;
 }
+/* гамбургер */
 
-li{
-	 padding: 1em;
-	 display: list-item;
-}
+/* .post {
+	max-width: 800px;
+	margin: 0 auto;
+	margin-top: 15px;
+	
+} */
 
-caption {
-	padding: 5px;
-}
-.katalogText {
-color: white;
-background-color: #F35656;
-text-align: left;
-width: 180px;
-margin: 80% 0 0 0em;
-padding: 1em
+p {
+padding: 15px;
+text-align:justify;
+word-wrap: break-word;
 }
 
 
-Footer{
-/* width: 100%;
-height: 100% */
-/* height: 80px; */
-/* padding-top: 1em; */
-/* background-color:#FFFFFE; */
-height: 80px;
-	/* min-width: 320px; */
+/* десигн панели навигации */
 
-
+ul {
 	display: flex;
 	justify-content: center;
 }
 
+/* footer {
+	height: 44px;
+} */
 
-
-
-a:link {text-decoration: none;}
-a:visited{color:#B3B3B3;}
-a:hover{color:black;}
-a.active {color:black; text-decoration: underline;}
-
-ul a{
-	linkColor:#B3B3B3;
+ .cont {
+	width: 500px;
+	height: 500px;
+	
 }
 
-.cardText {
-	color:white;
-}
-
-.headerNavItem {
-  display: flex;
-	list-style-type: none;
-	justify-content: center;
-}
-
-.linkFromCard {
-	display: block;
-}
-
-.centr1 {
-	grid-gap: 10px;
-
-}
-
-.centr2 {
-	grid-gap: 0px;
+.box {
+	box-shadow: 0px 0px 3px gray;
+	background-color:#FFFFFE;
 }
 
 .grid {
@@ -100,200 +93,13 @@ ul a{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 320px);
 	max-width: 980px;
-	}
-
-.gridContacts {
-	margin: 1em auto ;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, 320px);
-	max-width: 650px;
-}
-/*
-****************************************
-Общие Стили боксов{
-****************************************
-*/
-
-.box {
-
-	min-width: 300px;
-	min-height: 320px;
-	max-height: 520px;
-	overflow: hidden;
-
-	/* margin: 0 auto; */
-	border-radius: 10px;
-}
-
-.boxShagow {
-	box-shadow: 0px 0px 7px gray;
-}
-
-.hoverBox:hover {
-  transform: scale(1.03);
-  transition: all 0.5s;
-}
-
-/*
-****************************************
-} Общие Стили боксов
-****************************************
-*/
-
-/*
-****************************************
-Стиль боксов каталога {
-****************************************
-*/
-
-.test {
-	background-image: url("images/1.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-
-/*
-****************************************
-} Стиль боксов каталога
-****************************************
-*/
-
-iFrame {
-	height: 520px;
-}
-
-.kontakti {
-	background-color: #FFFFFE;
-	/* height: auto; */
-	max-height: 542px;
-
-}
-
-.kontakti p{
-	/* padding: 0.5em; */
-
-}
-
-.tableKontakti {
-	text-align: center;
-	margin: 0 auto;
-	/* padding: 1em; */
-	height: 520px;
-	max-width: 300px;
-max-height:520px;
-
-}
-
-.icons {
-	width: 32px;
-}
-
-td {
-	width: 160px;
-vertical-align: middle;
-text-align: left;
-/* padding: 1em; */
-}
-
-.aContactsColor:visited {color:black;}
-.aContactsColor:link {color:black;}
-.aContactsColor:hover {
-	color: blue;
-}
-
-.heightAuto{
-	height: 720px;
-	/* grid-auto-columns: auto; */
-}
-.rightText {
-	text-align: right;
-	padding: 1em;
-}
-
-.box1{
-	background-image: url("images/silk.jpg");
-}
-
-.box2 {
-	background-color: #BC0CE8;
-}
-
-.box3 {
-	background-color: #190DFF;
-}
-
-.box4 {
-	background-color: #FFD972;
-}
-
-.noActiveText {
-	color: red;
-}
-/*
-****************************************
-Стиль навигационной панели {
-****************************************
-*/
-
-.navigationPanel {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	max-height: 44px;
-	}
-
-.mobile{
-	display: none;
-}
-
-/*
-****************************************
-} Стиль навигационной панели
-****************************************
-*/
-
-/*
-****************************************
-Стиль главного рекламного бокса {
-****************************************
-*/
-
-.mainAdv {
-	padding-top: 1em;
-	box-shadow: 0px 0px 3px gray;
-	background-color:#3A3C3F;
-	max-width: 980px;
-	height: 320px;
-	display: flex;
-	justify-content: center;
-	margin: 1em auto;
 	min-width: 320px;
-}
+	}
 
-/*
-****************************************
-} Стиль главного рекламного бокса
-****************************************
-*/
 
-.centr2 {
-	box-shadow: 0px 0px 3px gray;
-	background-color: #FFFFFE;
-}
-
-@media only screen and (max-width: 1023px) {
-	.grid {
-		max-width: 650px;
-		}
-		.gridContacts {
-			max-width: 650px;
-			}
+/* @media only screen and (max-width: 1023px) {
+	
 }
 @media only screen and (max-width: 666px) {
-	.grid  {max-width: 320px;}
-	.gridContacts {max-width: 320px;}
-.full {display:none;}
-.mobile {display: flex;}
 
-	}
+	} */
