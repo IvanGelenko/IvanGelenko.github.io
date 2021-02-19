@@ -223,3 +223,14 @@ a:hover {
 .opasity {
 	opacity: .98;
 }
+
+.footer {
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+
+	.pict {
+		font-size: 50px;
+	}
