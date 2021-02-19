@@ -4,13 +4,13 @@
 
 
 body {
-background-color:#F2F1F2;
-font-family: 'Oswald', 'Arial', sans-serif;
-min-height: 100%;
-/* overflow: hidden; */
-display: flex;
-flex-direction: column;
-box-sizing: border-box;
+	background-color: #F2F1F2;
+	font-family: 'Oswald', 'Arial', sans-serif;
+	min-height: 100%;
+	/* overflow: hidden; */
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
 
 }
 
@@ -20,40 +20,46 @@ box-sizing: border-box;
 	/* display: flex; */
 	justify-content: center;
 	align-items: center;
-	max-width: 1900px;
+	/* max-width: 1900px; */
 	margin: 0 auto;
 	min-width: 200px;
- width: 100%;
+	width: 100%;
 	/* height: auto; */
-
+	
 }
 
 
 /* все что внутри этого div выравнивается по центру */
 
-header {
-	position:sticky;
-	top:0;
-	z-index: 0;
+.MainHeader {
+	position: sticky;
+	top: 0;
+	z-index: 1;
 	height: 72px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
-	/* margin: 0 auto; */
-	/* overflow: hidden; */
+}
+
+nav {
+	z-index: 0;
+}
+
+.dark {
+	background-color: #333333;
 }
 
 
-/* десигн панели навигации */
 
 nav ul {
 	display: flex;
-	}
+}
 
 ul li {
 	padding: 10px;
 }
+
 /* гамбургер */
 
 /* .post {
@@ -65,13 +71,17 @@ ul li {
 
 .ArticleHeader {
 	padding: 15px;
-	padding-bottom: 0px;
+	/* padding-bottom: 0px; */
+	display: flex;
+	align-items: center;
+	justify-content: center;	
 }
-p {
-padding: 35px;
-padding-top: 0px;
-/* text-align:justify; */
-word-wrap: break-word;
+
+.UpP {
+	padding: 35px;
+	padding-top: 0px;
+	/* text-align:justify; */
+	word-wrap: break-word;
 }
 
 
@@ -86,26 +96,42 @@ ul {
 	height: 44px;
 } */
 
- .cont {
+.cont {
 	max-width: 800px;
 	/* max-block-size: 500px; */
 	margin: 15px auto;
-	
+
 }
+
+.dark {
+	box-shadow: 0px 0px 3px gray;
+	background-color: #444444;
+}
+
+
 
 .box {
 	box-shadow: 0px 0px 3px gray;
-	background-color:#FFFFFE;
+	background-color: #FFFFFE;
 }
 
 .grid {
-	margin: 1em auto ;
+	margin: 1em auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 320px);
 	max-width: 980px;
 	min-width: 320px;
-	}
+}
 
+.GridItem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.GridItem p {
+	font-size: 50px;
+}
 
 /* @media only screen and (max-width: 1023px) {
 	
@@ -115,39 +141,79 @@ ul {
 	} */
 
 .read-more-state {
-display: none;
+	display: none;
 }
- 
+
 .read-more-target {
-opacity: 0;
-max-height: 0;
-font-size: 0;
-transition: .25s ease;
+	opacity: 0;
+	max-height: 0;
+	font-size: 0;
+	transition: .25s ease;
 }
- 
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
-opacity: 1;
-font-size: inherit;
-max-height: 999em;
+
+.read-more-state:checked~.read-more-wrap .read-more-target {
+	opacity: 1;
+	font-size: inherit;
+	max-height: 999em;
 }
- 
-.read-more-state ~ .read-more-trigger:before {
-content: 'Show more';
+
+.read-more-state~.read-more-trigger:before {
+	content: 'Show more';
 }
- 
-.read-more-state:checked ~ .read-more-trigger:before {
-content: 'Show less';
+
+.read-more-state:checked~.read-more-trigger:before {
+	content: 'Show less';
 }
- 
+
 .read-more-trigger {
-cursor: pointer;
-display: inline-block;
-padding: 0 .5em;
-color: #666;
-font-size: .9em;
-line-height: 2;
-border: 1px solid #ddd;
-border-radius: .25em;
-margin-left: 35px;
-margin-bottom: 35px;
+	cursor: pointer;
+	display: inline-block;
+	padding: 0 .5em;
+	color: #666;
+	font-size: .9em;
+	line-height: 2;
+	border: 1px solid #ddd;
+	border-radius: .25em;
+	margin-left: 35px;
+	margin-bottom: 35px;
+}
+
+
+a {
+	color: ivory;
+	text-decoration: none;
+}
+
+a:hover {
+	color: gray;
+	transition: 0.5s;
+	text-decoration: underline;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: minmax(3,1fr);
+	grid-auto-rows: 300px;
+	grid-gap: 0.5em;
+	margin: 0 auto;
+	margin-bottom: 35px;
+	justify-content: center;
+
+}
+.hoverBox:hover{
+	background-color: red;
+	transition: 0.5s;
+	transform: scale(1.05);
+}
+
+.blur{
+-webkit-filter: blur(5px);
+     -moz-filter: blur(5px);
+       -o-filter: blur(5px);
+      -ms-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.opasity {
+	opacity: .95;
 }
