@@ -63,9 +63,14 @@ ul li {
 	
 } */
 
+.ArticleHeader {
+	padding: 15px;
+	padding-bottom: 0px;
+}
 p {
 padding: 35px;
-text-align:justify;
+padding-top: 0px;
+/* text-align:justify; */
 word-wrap: break-word;
 }
 
