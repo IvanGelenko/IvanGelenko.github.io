@@ -178,6 +178,12 @@ ul {
 	margin-bottom: 35px;
 }
 
+.read-more-trigger:hover{
+	background-color: #444444;
+	color:white;
+	transition: 0.5s;
+}
+
 
 a {
 	color: ivory;
