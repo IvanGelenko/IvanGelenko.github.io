@@ -1,49 +1,148 @@
-/* html, body {
-	overscroll-behavior: none;
-} */
-
+/* *******дезигн боди, центрирование******* */
 
 body {
 	background-color: #F2F1F2;
 	font-family: 'Oswald', 'Arial', sans-serif;
-	min-height: 100%;
-	/* overflow: hidden; */
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
-
-}
-
-/* все что внутри этого div выравнивается по центру (а внутри все :)) */
-
-.wrapper {
-	/* display: flex; */
 	justify-content: center;
 	align-items: center;
-	/* max-width: 1900px; */
-	margin: 0 auto;
-	min-width: 200px;
-	width: 100%;
-	/* height: auto; */
-	
 }
 
+.overflow {
+	
+	overflow: hidden;
+}
 
-/* все что внутри этого div выравнивается по центру */
+.nonMenu {
+	overflow:auto;
 
+}
+/* **************************************** */
+
+/* *********дезигн главного хеадера******** */
 .MainHeader {
 	position: sticky;
 	top: 0;
-	z-index: 1;
-	height: 72px;
+	z-index: 2;
+	height: 44px;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 }
+/* **************************************** */
+
+
+/* ************мобильное меню************** */
+#MobileMenu {
+	top: 0;
+	z-index: 1;
+	position: sticky;
+	width: 100%;
+	height: 100vh;
+	background-color: tomato;
+	
+	
+}
+/* **************************************** */
+
+
+
+
+
+
+
+/* *********дезигн main контейнера********* */
+.SiteMain{
+	max-width: 1000px;
+	min-width: 300px;
+}
+/* **************************************** */
+
+
+
+/* **********подключаемые эффекты********* */
+
+.dark {
+	box-shadow: 0px 0px 3px gray;
+	background-color: #444444;
+}
+
+.box {
+	box-shadow: 0px 0px 3px gray;
+	background-color: #FFFFFE;
+}
+
+.opasity {
+	opacity: .98;
+}
+/* **************************************** */
+
+/* *************первый блок**************** */
+.cont {
+	/* margin: 15px auto; */
+}
+/* **************************************** */
+
+
+
+/* ***дезинг грида и внутренних элементов*** */
+.grid {
+	display: grid;
+	grid-auto-rows: 300px;
+	/* grid-gap: 0.5em; */
+	margin: 0 auto;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, 100%);
+	/* max-width: 980px; */
+	min-width: 320px;
+}
+
+.GridItem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.GridItem p {
+	font-size: 50px;
+}
+
+.hoverBox:hover {
+	background-color: red;
+	transition: 0.5s;
+	transform: scale(1.05);
+}
+/* **************************************** */
+
+
+/* ****************ссылки******************* */
+
+a {
+	color: ivory;
+	text-decoration: none;
+}
+
+a:hover {
+	color: gray;
+	transition: 0.5s;
+	text-decoration: underline;
+}
+
+/* **************************************** */
+
+
+
+
+
+
 
 nav {
 	z-index: 0;
+	display: flex;
+	max-width: 1000px;
 }
 
 .dark {
@@ -60,21 +159,12 @@ ul li {
 	padding: 10px;
 }
 
-/* гамбургер */
-
-/* .post {
-	max-width: 800px;
-	margin: 0 auto;
-	margin-top: 15px;
-	
-} */
-
 .ArticleHeader {
 	padding: 15px;
 	/* padding-bottom: 0px; */
 	display: flex;
 	align-items: center;
-	justify-content: center;	
+	justify-content: center;
 }
 
 .UpP {
@@ -92,39 +182,12 @@ ul {
 	justify-content: center;
 }
 
-/* footer {
-	height: 44px;
-} */
-
-.cont {
-	max-width: 800px;
-	/* max-block-size: 500px; */
-	margin: 15px auto;
-
-}
-
-.dark {
-	box-shadow: 0px 0px 3px gray;
-	background-color: #444444;
-}
 
 
 
-.box {
-	box-shadow: 0px 0px 3px gray;
-	background-color: #FFFFFE;
-}
 
 
-.GridItem {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
-.GridItem p {
-	font-size: 50px;
-}
 
 /* @media only screen and (max-width: 1023px) {
 	
@@ -171,41 +234,17 @@ ul {
 	margin-bottom: 35px;
 }
 
-.read-more-trigger:hover{
+.read-more-trigger:hover {
 	background-color: #444444;
-	color:white;
+	color: white;
 	transition: 0.5s;
 }
 
 
-a {
-	color: ivory;
-	text-decoration: none;
-}
 
-a:hover {
-	color: gray;
-	transition: 0.5s;
-	text-decoration: underline;
-}
 
-.grid {
-	display: grid;
-	grid-auto-rows: 300px;
-	grid-gap: 0.5em;
-	margin: 0 auto;
-	margin-bottom: 35px;
-	justify-content: center;
-	grid-template-columns: repeat(auto-fit, 320px);
-	max-width: 980px;
-	min-width: 320px;
 
-}
-.hoverBox:hover{
-	background-color: red;
-	transition: 0.5s;
-	transform: scale(1.05);
-}
+
 
 /* .blur{
 -webkit-filter: blur(5px);
@@ -215,9 +254,7 @@ a:hover {
           filter: blur(5px);
 } */
 
-.opasity {
-	opacity: .98;
-}
+
 
 .footer {
 	height: 44px;
@@ -225,8 +262,45 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 15px;
-	}
+}
 
-	.pict {
-		font-size: 50px;
-	}
+.pict {
+	font-size: 50px;
+}
+
+
+
+
+#burger {
+	/* font-size: 50px; */
+	color: white;
+}
+
+.red {
+	background-color: tomato;
+}
+
+.green {
+	background-color: green;
+}
+
+.active {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.MobileMenuUlActive  {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:flex-end;
+	margin: 35px;
+}
+
+
+.NonActive {
+	display: none;
+}
+
