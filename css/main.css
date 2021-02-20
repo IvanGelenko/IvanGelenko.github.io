@@ -42,7 +42,7 @@ body {
 	position: sticky;
 	width: 100%;
 	height: 100vh;
-	background-color: tomato;
+	background-color: #444444;
 	
 	
 }
@@ -189,12 +189,7 @@ ul {
 
 
 
-/* @media only screen and (max-width: 1023px) {
-	
-}
-@media only screen and (max-width: 666px) {
 
-	} */
 
 .read-more-state {
 	display: none;
@@ -274,6 +269,8 @@ ul {
 #burger {
 	/* font-size: 50px; */
 	color: white;
+	margin-right: 25px;
+	
 }
 
 .red {
@@ -304,3 +301,10 @@ ul {
 	display: none;
 }
 
+@media only screen and (max-width: 600px) {
+	#burger {display:flex ;}
+	nav {display: none;}
+	.MainHeader {
+		justify-content: flex-end;
+	}
+}
