@@ -318,19 +318,19 @@ ul {
 	display: none;
 }
 
+/* <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+<<<<<<< HEAD */
 @media only screen and (max-width: 1100px) {
 =======
 @media only screen and (max-width: 600px) {
->>>>>>> parent of 52d6c81 (1243)
+/* >>>>>>> parent of 52d6c81 (1243) */
 	#burger {display:flex ;}
 	nav {display: none;}
 	.MainHeader {
 		justify-content: flex-end;
 	}
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 	.GridItem {
 		width: 100%;
 	}
@@ -339,9 +339,9 @@ ul {
 	}
 }
 =======
->>>>>>> parent of f7e2630 (hotfix23)
+/* >>>>>>> parent of f7e2630 (hotfix23)
 =======
 >>>>>>> parent of f7e2630 (hotfix23)
 =======
 }
->>>>>>> parent of 52d6c81 (1243)
+>>>>>>> parent of 52d6c81 (1243) */
