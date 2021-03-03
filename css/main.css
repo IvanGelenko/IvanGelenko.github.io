@@ -44,7 +44,11 @@ body {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
+=======
+	height: 100vh;
+>>>>>>> parent of 52d6c81 (1243)
 =======
 	height: 100vh;
 >>>>>>> parent of 52d6c81 (1243)
@@ -318,6 +322,7 @@ ul {
 	display: none;
 }
 
+<<<<<<< HEAD
 /* <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD */
@@ -325,11 +330,15 @@ ul {
 =======
 @media only screen and (max-width: 600px) {
 /* >>>>>>> parent of 52d6c81 (1243) */
+=======
+@media only screen and (max-width: 600px) {
+>>>>>>> parent of 52d6c81 (1243)
 	#burger {display:flex ;}
 	nav {display: none;}
 	.MainHeader {
 		justify-content: flex-end;
 	}
+<<<<<<< HEAD
 /* <<<<<<< HEAD */
 	.GridItem {
 		width: 100%;
@@ -345,3 +354,6 @@ ul {
 =======
 }
 >>>>>>> parent of 52d6c81 (1243) */
+=======
+}
+>>>>>>> parent of 52d6c81 (1243)
