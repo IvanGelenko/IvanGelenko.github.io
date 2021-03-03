@@ -42,8 +42,13 @@ body {
 	position: sticky;
 	width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	background-color: #444444;
+=======
+	height: 100vh;
+	background-color: tomato;
+>>>>>>> parent of f7e2630 (hotfix23)
 =======
 	height: 100vh;
 	background-color: tomato;
@@ -323,6 +328,7 @@ ul {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media only screen and (max-width: 1100px) {
 	#burger {display:flex ;}
 	nav {display: none;}
@@ -336,5 +342,7 @@ ul {
 		grid-template-columns: repeat(auto-fill, 100%);
 	}
 }
+=======
+>>>>>>> parent of f7e2630 (hotfix23)
 =======
 >>>>>>> parent of f7e2630 (hotfix23)
