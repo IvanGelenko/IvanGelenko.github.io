@@ -41,8 +41,13 @@ body {
 	z-index: 1;
 	position: sticky;
 	width: 100%;
+<<<<<<< HEAD
 	
 	background-color: #444444;
+=======
+	height: 100vh;
+	background-color: tomato;
+>>>>>>> parent of f7e2630 (hotfix23)
 	
 	
 }
@@ -201,7 +206,12 @@ ul {
 
 
 
+/* @media only screen and (max-width: 1023px) {
+	
+}
+@media only screen and (max-width: 666px) {
 
+	} */
 
 .read-more-state {
 	display: none;
@@ -282,8 +292,6 @@ ul {
 #burger {
 	/* font-size: 50px; */
 	color: white;
-	margin-right: 25px;
-	
 }
 
 .red {
@@ -314,6 +322,7 @@ ul {
 	display: none;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 1100px) {
 	#burger {display:flex ;}
 	nav {display: none;}
@@ -327,3 +336,5 @@ ul {
 		grid-template-columns: repeat(auto-fill, 100%);
 	}
 }
+=======
+>>>>>>> parent of f7e2630 (hotfix23)
