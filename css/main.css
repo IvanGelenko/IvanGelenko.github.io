@@ -43,7 +43,11 @@ body {
 	width: 100%;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
+=======
+	height: 100vh;
+>>>>>>> parent of 52d6c81 (1243)
 	background-color: #444444;
 =======
 	height: 100vh;
@@ -67,7 +71,7 @@ body {
 /* *********дезигн main контейнера********* */
 .SiteMain{
 	max-width: 1000px;
-	/* min-width: 300px; */
+	min-width: 300px;
 }
 /* **************************************** */
 
@@ -81,7 +85,7 @@ body {
 }
 
 .box {
-	/* box-shadow: 0px 0px 3px gray; */
+	box-shadow: 0px 0px 3px gray;
 	background-color: #FFFFFE;
 }
 
@@ -101,31 +105,19 @@ body {
 /* ***дезинг грида и внутренних элементов*** */
 .grid {
 	display: grid;
-	justify-content: center;
-	
-	/* grid-template-columns: minmax(400px, 50%) minmax(400px, 50%);  */
-	/* grid-auto-rows: 300px; */
+	grid-auto-rows: 300px;
 	/* grid-gap: 0.5em; */
-	/* margin: 0 auto; */
-	
-	grid-template-columns: repeat(auto-fill, 500px);
-	/* grid-template-columns: 1fr 1fr; */
-	/* gap: 15px; */
-	/* max-width: 1000px; */
-	/* min-width: 320px; */
-
-	/* grid-template-columns: repeat(auto-fit, 320px); */
+	margin: 0 auto;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, 100%);
 	/* max-width: 980px; */
-
-
+	min-width: 320px;
 }
 
 .GridItem {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 500px;
-	/* max-width: 500px; */
 }
 
 .GridItem p {
@@ -283,8 +275,7 @@ ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* padding-bottom: 15px; */
-	margin: 35px;
+	padding-bottom: 15px;
 }
 
 .pict {
@@ -329,12 +320,17 @@ ul {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media only screen and (max-width: 1100px) {
+=======
+@media only screen and (max-width: 600px) {
+>>>>>>> parent of 52d6c81 (1243)
 	#burger {display:flex ;}
 	nav {display: none;}
 	.MainHeader {
 		justify-content: flex-end;
 	}
+<<<<<<< HEAD
 	.GridItem {
 		width: 100%;
 	}
@@ -346,3 +342,6 @@ ul {
 >>>>>>> parent of f7e2630 (hotfix23)
 =======
 >>>>>>> parent of f7e2630 (hotfix23)
+=======
+}
+>>>>>>> parent of 52d6c81 (1243)
