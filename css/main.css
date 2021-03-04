@@ -79,7 +79,7 @@ body {
 /* *********дезигн main контейнера********* */
 .SiteMain{
 	max-width: 1000px;
-	min-width: 300px;
+	min-width: 500px;
 }
 /* **************************************** */
 
@@ -113,13 +113,13 @@ body {
 /* ***дезинг грида и внутренних элементов*** */
 .grid {
 	display: grid;
-	grid-auto-rows: 300px;
+	grid-auto-rows: 500px;
 	/* grid-gap: 0.5em; */
 	margin: 0 auto;
 	justify-content: center;
-	grid-template-columns: repeat(auto-fit, 100%);
+	grid-template-columns: repeat(auto-fit, 500px);
 	/* max-width: 980px; */
-	min-width: 320px;
+	/* min-width: 500px; */
 }
 
 .GridItem {
@@ -326,46 +326,20 @@ ul {
 	display: none;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD */
+
+
 @media only screen and (max-width: 1100px) {
-=======
-@media only screen and (max-width: 600px) {
-/* >>>>>>> parent of 52d6c81 (1243) */
-=======
-@media only screen and (max-width: 600px) {
->>>>>>> parent of 52d6c81 (1243)
-=======
-@media only screen and (max-width: 600px) {
->>>>>>> parent of 52d6c81 (1243)
 	#burger {display:flex ;}
 	nav {display: none;}
 	.MainHeader {
 		justify-content: flex-end;
 	}
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* <<<<<<< HEAD */
+
+	.grid {
+		grid-template-columns: repeat(auto-fit, 100%);
+	}
 	.GridItem {
 		width: 100%;
 	}
-	.grid {
-		grid-template-columns: repeat(auto-fill, 100%);
-	}
 }
-=======
-/* >>>>>>> parent of f7e2630 (hotfix23)
-=======
->>>>>>> parent of f7e2630 (hotfix23)
-=======
-}
->>>>>>> parent of 52d6c81 (1243) */
-=======
-}
->>>>>>> parent of 52d6c81 (1243)
-=======
-}
->>>>>>> parent of 52d6c81 (1243)
+
