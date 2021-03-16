@@ -1,14 +1,14 @@
 /* *******дезигн боди, центрирование******* */
 
 body {
-	background-color: #F2F1F2;
+	background-color: #FFFFFF;
 	font-family: 'Oswald', 'Arial', sans-serif;
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
 	justify-content: center;
 	align-items: center;
-	
+	min-width: 400px;
 }
 
 .overflow {
@@ -23,65 +23,221 @@ body {
 
 /* *********дезигн главного хеадера******** */
 .MainHeader {
-	position: sticky;
-	top: 0;
-	z-index: 2;
-	height: 44px;
+	/* position:absolute; */
+	/* top: 0; */
+	/* z-index: 1; */
+	height: 66px;
 	width: 100%;
+	max-width: 1200px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	/* justify-content: center; */
 }
 /* **************************************** */
 
 
 /* ************мобильное меню************** */
 #MobileMenu {
-	top: 0;
+	top: 66px;
 	z-index: 1;
 	position: sticky;
 	width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-	
-=======
 	height: 100vh;
->>>>>>> parent of 52d6c81 (1243)
-=======
-	height: 100vh;
->>>>>>> parent of 52d6c81 (1243)
-=======
-	height: 100vh;
->>>>>>> parent of 52d6c81 (1243)
 	background-color: #444444;
-=======
-	height: 100vh;
-	background-color: tomato;
->>>>>>> parent of f7e2630 (hotfix23)
-=======
-	height: 100vh;
-	background-color: tomato;
->>>>>>> parent of f7e2630 (hotfix23)
-	
-	
 }
 /* **************************************** */
 
-
-
+/* *********дезигн лого********* */
+.logo {
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+padding: 0 25px;
+/* margin-right: auto; */
+}
+/* **************************************** */
 
 
 
 
 /* *********дезигн main контейнера********* */
 .SiteMain{
-	max-width: 1000px;
-	min-width: 500px;
+	width: 100%;
+	max-width: 1200px;
+	min-width: 300px;
+	/* height: calc(100vh - 88px); */
+	/* max-height: 1080px; */
+	/* background-color: green; */
 }
 /* **************************************** */
+
+.mainSection {
+	height: 100%;
+	/* max-width: 300px; */
+	height: 630px;
+	position: relative;
+	z-index: 0;
+	/* margin-bottom: 5px; */
+}
+
+.mainSection-container {
+	display: flex;
+	height: 100%;
+	max-height: 800px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background-image: url(/css/images/clear-aligner-provider.jpg);
+	background-size:cover;
+	background-repeat:no-repeat ;
+	
+	
+	/* max-height: 600px; */
+}
+
+
+.mainSection-container-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* margin: auto; */
+	/* margin-left: auto; */
+	width: 50%;
+	height: 100%;
+	/* min-width: 300px; */
+	/* max-height: 1000px; */
+}
+
+
+
+.mainImg {
+	
+	width: 100%;
+	
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 2em;
+	line-height: 55px;
+	text-align: center;
+	padding: 1em;
+	max-width: 200px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1em;
+}
+
+.callBackForm-container {
+	margin-top: 15px;
+	display: flex;
+	width: 100%;
+}
+
+.callBackForm {
+
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	/* width: 600px; */
+	/* min-width: 410px; */
+	/* height: 100%; */
+	margin-left: auto;
+	/* width: 100%; */
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	/* align-content: flex-start; */
+	margin-top: 45px;
+}
+
+.callButton-container {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+.callButton {
+	margin: 2em;
+	width: 120px;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	/* margin: 4em 0 4em 0; */
+	background-color:slateblue;
+	color: white;
+}
+
+.textCall-container {
+	
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	padding: 15px;
+}
+ .textCall p {
+	 margin: 5px;
+ }
+
+
+ .privelege {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	/* width: 100%; */
+	/* height: calc(50vh - 132px); */
+	/* height: 100%; */
+}
+
+.privelege-item {
+width: 50%;
+}
+
+.text1 {
+display: flex;
+justify-content: center;
+text-align: center;
+width: 100%;
+margin-top: 45px;
+margin-bottom: 45px;
+font-size: 50px;
+}
+
+.privelege {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-row: auto;
+	grid-template-columns: repeat(auto-fill, 600px);
+	
+	/* gap: 30px; */
+}
+
+.privelege-item {
+	border: 1px solid gray;
+	height: 275px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* background-color: red; */
+	width: 100%;
+}
+
+.privelege-item-text1 {
+font-size: 25px;
+}
+
+.privelege-item-text2 {
+	font-size: 20px;
+	padding-top: 15px;	
+	text-align: center;
+}
 
 
 
@@ -93,8 +249,8 @@ body {
 }
 
 .box {
-	box-shadow: 0px 0px 3px gray;
-	background-color: #FFFFFE;
+	box-shadow: 0px 0px 5px gray;
+	/* background-color: #F7D460; */
 }
 
 .opasity {
@@ -102,48 +258,12 @@ body {
 }
 /* **************************************** */
 
-/* *************первый блок**************** */
-.cont {
-	/* margin: 15px auto; */
-}
-/* **************************************** */
-
-
-
-/* ***дезинг грида и внутренних элементов*** */
-.grid {
-	display: grid;
-	grid-auto-rows: 500px;
-	/* grid-gap: 0.5em; */
-	margin: 0 auto;
-	justify-content: center;
-	grid-template-columns: repeat(auto-fit, 500px);
-	/* max-width: 980px; */
-	/* min-width: 500px; */
-}
-
-.GridItem {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.GridItem p {
-	font-size: 50px;
-}
-
-.hoverBox:hover {
-	background-color: red;
-	transition: 0.5s;
-	transform: scale(1.05);
-}
-/* **************************************** */
 
 
 /* ****************ссылки******************* */
 
 a {
-	color: ivory;
+	color: black;
 	text-decoration: none;
 }
 
@@ -164,7 +284,8 @@ a:hover {
 nav {
 	z-index: 0;
 	display: flex;
-	max-width: 1000px;
+	/* max-width: 1000px; */
+	margin: auto;
 }
 
 .dark {
@@ -178,23 +299,9 @@ nav ul {
 }
 
 ul li {
-	padding: 10px;
+	padding: 25px;
 }
 
-.ArticleHeader {
-	padding: 15px;
-	/* padding-bottom: 0px; */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.UpP {
-	padding: 35px;
-	padding-top: 0px;
-	/* text-align:justify; */
-	word-wrap: break-word;
-}
 
 
 /* десигн панели навигации */
@@ -211,72 +318,6 @@ ul {
 
 
 
-/* @media only screen and (max-width: 1023px) {
-	
-}
-@media only screen and (max-width: 666px) {
-
-	} */
-
-.read-more-state {
-	display: none;
-}
-
-.read-more-target {
-	opacity: 0;
-	max-height: 0;
-	font-size: 0;
-	transition: .25s ease;
-}
-
-.read-more-state:checked~.read-more-wrap .read-more-target {
-	opacity: 1;
-	font-size: inherit;
-	max-height: 999em;
-}
-
-.read-more-state~.read-more-trigger:before {
-	content: 'Show more';
-}
-
-.read-more-state:checked~.read-more-trigger:before {
-	content: 'Show less';
-}
-
-.read-more-trigger {
-	cursor: pointer;
-	display: inline-block;
-	padding: 0 .5em;
-	color: #666;
-	font-size: .9em;
-	line-height: 2;
-	border: 1px solid #ddd;
-	border-radius: .25em;
-	margin-left: 35px;
-	margin-bottom: 35px;
-}
-
-.read-more-trigger:hover {
-	background-color: #444444;
-	color: white;
-	transition: 0.5s;
-}
-
-
-
-
-
-
-
-/* .blur{
--webkit-filter: blur(5px);
-     -moz-filter: blur(5px);
-       -o-filter: blur(5px);
-      -ms-filter: blur(5px);
-          filter: blur(5px);
-} */
-
-
 
 .footer {
 	height: 44px;
@@ -285,12 +326,6 @@ ul {
 	align-items: center;
 	padding-bottom: 15px;
 }
-
-.pict {
-	font-size: 50px;
-}
-
-
 
 
 #burger {
@@ -302,8 +337,20 @@ ul {
 	background-color: tomato;
 }
 
+.blue {
+	background-color: indigo;
+}
+
 .green {
 	background-color: green;
+}
+
+.yellow {
+	background-color: khaki;
+}
+
+.brown {
+	background-color: #5C67AB;
 }
 
 .active {
@@ -313,12 +360,15 @@ ul {
 	align-items: center;
 }
 
-.MobileMenuUlActive  {
+#MobileMenuUl {
 	display: flex;
+	
 	flex-direction: column;
 	justify-content: center;
 	align-items:flex-end;
 	margin: 35px;
+	/* height: 100%; */
+	
 }
 
 
@@ -326,20 +376,33 @@ ul {
 	display: none;
 }
 
+@media only screen and (max-width: 890px) {
+	#emptyBox{display: none;}
+	/* .mainSection-container {background-image:none ;} */
 
+}
 
-@media only screen and (max-width: 1100px) {
-	#burger {display:flex ;}
+@media only screen and (max-width: 668px) {
 	nav {display: none;}
-	.MainHeader {
-		justify-content: flex-end;
+	#burger {
+		display:flex ;
+		margin-left: auto;
+		margin-right: 15px;
+	}
+	.mainSection-container-item {
+	width: 100%;
 	}
 
-	.grid {
-		grid-template-columns: repeat(auto-fit, 100%);
+	
+
+	
+	.privelege {
+		
+		grid-template-columns: repeat(auto-fill, 400px);
+		
+		/* gap: 30px; */
 	}
-	.GridItem {
-		width: 100%;
-	}
+
+/* #emptyBox{width: 25%;} */
 }
 

@@ -8,11 +8,11 @@ document.getElementById('burger').onclick = function () {
     if (MobileMenu.className == 'NonActive') {
         MobileMenu.className = 'Active';
         MainBody.className='overflow';
-        MobileMenuUl.className='MobileMenuUlActive';
+        // MobileMenuUl.className='MobileMenuUlActive';
     } else {
         MobileMenu.className = 'NonActive';
         MainBody.className='NonMenu';
-        MobileMenuUl.className='NonActive';
+        // MobileMenuUl.className='NonActive';
     }
 
        
